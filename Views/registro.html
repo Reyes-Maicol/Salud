@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleRegis.css">
+    <script src=https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js></script>
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Registro</div>
+        <form action="#" id="miFormulario">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Nombres</span>
+                    <input type="text" placeholder="Ingrese sus nombres" id="nombres">
+                    <label id="errorNom"></label>
+                </div>
+                <div class="card-box">
+                    <span class="details">Apellidos</span>
+                    <input type="text" placeholder="Ingrese sus apellidos" id="apellidos">
+                    <label id="errorApel" style="color: red;"></label>
+                </div>
+                <div class="card-box">
+                    <span class="details">Fecha de Nacimiento</span>
+                    <input type="date" placeholder="Ingrese su fecha de Nacimiento" id="fecha">
+                    <label id="errorFecha" style="color: red;"></label>
+                </div>
+                <div class="card-box">
+                    <span class="details">Correo</span>
+                    <input type="email" placeholder="Ingrese su correo" id="correo" >
+                </div>
+                <div class="card-box">
+                    <span class="details">Celular</span>
+                    <input type="text" placeholder="Ingrese su celular" id="celular">
+                </div>
+                <div class="tipoDocument">
+                    <span class="details">Seleccione su documento</span>
+                    <select id="TipoDoc">
+                        <option value="">Seleccione su tipo</option>
+                        <option value="RC">RC</option>
+                        <option value="TI">TI</option>
+                        <option value="CC">CC</option>
+                        <option value="CE">CE</option>
+                    </select>
+                    <label id="listaError" style="display: block; color: red; size: 5px;"></label>
+                </div>
+                <div class="card-box">
+                    <span class="details">Documento</span>
+                    <input type="text" placeholder="Numero de documento" id="NumDoc">
+                    <label id="errorNumDocumento" style="color: red;"></label>
+                </div>
+                <div class="card-box">
+                    <span class="details">Contraseña</span>
+                    <input type="password" placeholder="Ingrese su contraseña" id="pass">
+                    <label id="contraerror" style="display: block; color: red;"></label>
+                </div>
+                <div class="card-box">
+                    <span class="details">Confirmar contraseña</span>
+                    <input type="password" placeholder="Confirme su contraseña" id="pass2">
+                    <label id="contraerror2" style="display: block;color: red;"></label>
+                </div>
+
+                <div class="circal-form">
+                    <span class="circal-titte" >Genero</span>
+                    <div class="category" onblur="Genero()">
+                        <input type="radio" name="gender" value="Hombre">Hombre
+                        <input type="radio" name="gender" value="Mujer">Mujer
+                        <input type="radio" name="gender" value="Otros">Otros
+                        <label id="errorGenero" style="display: block;color: red;"></label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Registrar" onclick="ValidarRegistro()">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="validacionRegistro.js"></script>
+</body>
+</html>

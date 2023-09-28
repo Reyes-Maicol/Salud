@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background:linear-gradient(#fff 40%, #009fd9 60%);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 12px;
+    background: #fff;
+}
+
+.logo-header .imagen img , .logo-bogota img{
+    width: 150px;
+}
+
+.main-content{
+    padding: 0 0 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedor{
+    background:white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+form h1{
+    font-size: 3em;
+    text-align: center;
+    background-color: #2388ad;
+    height: 50px;
+    color: white;
+    line-height: 40px;
+    width: 100%;
+}
+
+form label{
+    display: block;
+    font-size: 1.5em;
+    color: #0101df;
+    margin: 9px 0 7px 20px;
+}
+
+.inputs{
+    width: 85%;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 25px;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: #009fd9;
+}
+
+.inputs:focus{
+    border-color: #009fd9;
+    outline: none;
+}
+
+.btn{
+    margin: 20px auto;
+    color: white;
+    background: #3498db;
+    font-size: 1.2em;
+    width: 40%;
+    height: 40px;
+    border-radius: 30px;
+    border-color: #009fd9;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #1B80B7;
+}
+
+form .div-registrese{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+form .div-registrese a{
+    text-decoration: none;
+    color: blue;
+}

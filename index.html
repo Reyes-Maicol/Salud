@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <div class="imagen">
+                <img src="/imagenes/capital 1.png">
+            </div>
+        </div>
+        <div class="logo-bogota">
+            <img src="/imagenes/Bogota2017.png">
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="contenedor">
+            <form id="form-login">
+                <h1>Bienvenidos</h1>
+    
+                <label for="user">Usuario:</label>
+                <input class="inputs" type="text" id="user" >
+    
+                <label for="pass">Ingrese su contraseña:</label>
+                <input class="inputs" type="password" id="pass">
+    
+                <input class="btn" type="submit" value="Iniciar sesión" onclick="validar()">
+    
+                <div class="div-registrese">
+                    <a href="registro.html">Registrese</a>
+                    <a href="#">Olvido su contraseña?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="scriptLogin.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js></script> 
+</body>
+</html>
